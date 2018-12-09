@@ -26,8 +26,7 @@ namespace Assets
         // Update is called once per frame    ////Class is for handling collisions
         void OnCollisionEnter(Collision collisionInfo)
         {
-            Debug.Log(collisionInfo.collider.name);
-            if (collisionInfo.collider.tag == "Obstacle")
+           if(collisionInfo.collider.tag=="Obstacle")
             {
                 player.iscollected = false;
                 gameObject.transform.position = originalPos;
@@ -35,42 +34,53 @@ namespace Assets
             if(collisionInfo.collider.name=="Item1")
             {
                 if (player.currentItem == item1.itemId)
+                {
                     player.iscollected = true;
+                    Debug.Log("Check1");
+                }
             }
             if (collisionInfo.collider.name == "Item2")
             {
                 if (player.currentItem == item2.itemId)
+                {
                     player.iscollected = true;
+                    Debug.Log("Check2");
+                }
             }
             if (collisionInfo.collider.name == "Item3")
             {
                 if (player.currentItem == item3.itemId)
                     player.iscollected = true;
+                Debug.Log("Check3");
             }
             if (collisionInfo.collider.name == "Item4")
             {
                 if (player.currentItem == item4.itemId)
                     player.iscollected = true;
+                Debug.Log("Check4");
             }
             if (collisionInfo.collider.name == "Item5")
             {
                 if (player.currentItem == item5.itemId)
                     player.iscollected = true;
+                Debug.Log("Check5");
             }
             if (collisionInfo.collider.name == "Item6")
             {
                 if (player.currentItem == item6.itemId)
                     player.iscollected = true;
+                Debug.Log("Check6");
             }
             if (collisionInfo.collider.tag=="Gate")
             {
-                if (player.currentItem == gate1.currentItem && gate1.currentItem == levelSettings.numItems)
+                if (player.iscollected && gate1.currentItem == levelSettings.numItems)
                     player.isdeposited = true;
                 if (player.isdeposited == true)
-                    Debug.Log("winner");
-                if(player.currentItem==gate1.currentItem)
+                    Application.Quit();
+                if(player.iscollected)
                 {
-                  player.currentItem=player.changeItem(player.currentItem);
+                    player.currentItem = player.currentItem + 1;
+                    Debug.Log(player.currentItem);
                    gate1.currentItem= gate1.changeItem(player.currentItem);
                 }
             }

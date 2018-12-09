@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Assets
 {
     [System.Serializable]
-    public class Item 
+    public class Item
     {
         
     
