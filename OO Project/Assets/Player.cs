@@ -9,13 +9,14 @@ namespace Assets
     public class Player : ItemUser
     {
         int currentItem;
-        bool iscollected;
-        bool isdeposited;
+        public bool iscollected;
+        public bool isdeposited;
         public Player()
         {
             currentItem = 1;
             iscollected = false;
             isdeposited = false;
+           
         }
         override public int changeItem(int item)
         {
