@@ -73,7 +73,7 @@ namespace Assets
             }
             if (collisionInfo.collider.tag=="Gate")
             {
-                if (player.iscollected && gate1.currentItem == levelSettings.numItems)
+                if (player.iscollected && player.currentItem == levelSettings.numItems)
                     player.isdeposited = true;
                 if (player.isdeposited == true)
                     Application.Quit();
@@ -81,7 +81,7 @@ namespace Assets
                 {
                     player.currentItem = player.currentItem + 1;
                     Debug.Log(player.currentItem);
-                   gate1.currentItem= gate1.changeItem(player.currentItem);
+                
                 }
             }
     }
