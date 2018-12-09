@@ -81,7 +81,11 @@ namespace Assets
                 {
                     player.currentItem = player.currentItem + 1;
                     Debug.Log(player.currentItem);
+<<<<<<< HEAD
                    gate1.currentItem= gate1.changeItem(player.currentItem);
+=======
+                
+>>>>>>> parent of fa35a1b... Minor tweaks and balances, increased encapsulation and abstraction, Added more notes
                 }
             }
     }
