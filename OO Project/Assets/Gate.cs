@@ -6,15 +6,19 @@ using UnityEngine;
 
 namespace Assets
 {
-    public class Gate : ItemUser
+    public class Gate : Player, IItemUser
     {
 
-        int currentItem;//item to be deposited
+        new public int currentItem { get; set; }//item to be deposited
         public Gate()
         {
-            currentItem = 1;
+            currentItem = 1; 
         }
-        override public int changeItem(int item)
+        public Gate(int num)
+        {
+            currentItem = num;
+        }
+        new public int changeItem(int item)
         {
             return item++;
         }

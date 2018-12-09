@@ -8,7 +8,7 @@ namespace Assets
 {
     public class levelSettings
     {
-        protected int numItems;//max5 per set
+        public int numItems;//max5 per set
                                // protected int numItemSets;//max3
         public levelSettings()
         {

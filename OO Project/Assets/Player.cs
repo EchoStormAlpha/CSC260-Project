@@ -6,9 +6,9 @@ using UnityEngine;
 
 namespace Assets
 {
-    public class Player : ItemUser
+    public class Player : IItemUser
     {
-        int currentItem;
+        public int currentItem { get; set; }
         public bool iscollected;
         public bool isdeposited;
         public Player()
@@ -18,9 +18,10 @@ namespace Assets
             isdeposited = false;
            
         }
-        override public int changeItem(int item)
+        public int changeItem(int item)
         {
             return item++;
         }
+        
     }
 }

@@ -17,7 +17,10 @@ namespace Assets
             itemId = itemID;
             setId = setID;
         }
-
+        public Item(int itemID)
+        {
+            itemId = itemID;
+        }
         public bool canpickup(int ID)
         {
             if (ID == itemId - 1)

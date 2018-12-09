@@ -6,13 +6,10 @@ using UnityEngine;
 
 namespace Assets
 {
-    public abstract class ItemUser : levelSettings
+    public interface IItemUser
     {
-        int lastitem;
-
-
-        abstract public int changeItem(int item);
-
+        int currentItem { get; set; }
+        int changeItem(int item);
 
     }
 }
