@@ -36,7 +36,7 @@ namespace Assets
                 if (player.currentItem == item1.itemId)
                 {
                     player.iscollected = true;
-                    Debug.Log("Check1");
+                   // Debug.Log("Check1");
                 }
             }
             if (collisionInfo.collider.name == "Item2")
@@ -44,32 +44,32 @@ namespace Assets
                 if (player.currentItem == item2.itemId)
                 {
                     player.iscollected = true;
-                    Debug.Log("Check2");
+                   // Debug.Log("Check2");
                 }
             }
             if (collisionInfo.collider.name == "Item3")
             {
                 if (player.currentItem == item3.itemId)
                     player.iscollected = true;
-                Debug.Log("Check3");
+               // Debug.Log("Check3");
             }
             if (collisionInfo.collider.name == "Item4")
             {
                 if (player.currentItem == item4.itemId)
                     player.iscollected = true;
-                Debug.Log("Check4");
+              //  Debug.Log("Check4");
             }
             if (collisionInfo.collider.name == "Item5")
             {
                 if (player.currentItem == item5.itemId)
                     player.iscollected = true;
-                Debug.Log("Check5");
+               // Debug.Log("Check5");
             }
             if (collisionInfo.collider.name == "Item6")
             {
                 if (player.currentItem == item6.itemId)
                     player.iscollected = true;
-                Debug.Log("Check6");
+             //   Debug.Log("Check6");
             }
             if (collisionInfo.collider.tag=="Gate")
             {
@@ -80,7 +80,7 @@ namespace Assets
                 if(player.iscollected)
                 {
                     player.currentItem = player.currentItem + 1;
-                    Debug.Log(player.currentItem);
+               //     Debug.Log(player.currentItem);
                 
                 }
             }

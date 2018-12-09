@@ -8,8 +8,8 @@ namespace Assets
 
 
         public Rigidbody rb;
-        private float forwardForce = 16000f;
-        private float lateralForce = 16000f;
+       static private float forwardForce = 16000f;
+        static private float lateralForce = 16000f;
         private int jumptime = 100;
        
         void FixedUpdate()
