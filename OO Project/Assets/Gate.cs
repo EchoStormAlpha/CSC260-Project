@@ -10,17 +10,18 @@ namespace Assets
     {
         
          public int currentItem { get; set; }//item to be deposited
-        protected int setID;
+        
         public Gate()
         {
+           
             currentItem = 1;
         }
-        protected Gate(int num)
+        public Gate(int num)
         {
             currentItem = 1;
 
         }
-         protected int changeItem(int item)
+         public int changeItem(int item)
         {
             return item++;
         }

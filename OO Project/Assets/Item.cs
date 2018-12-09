@@ -15,7 +15,7 @@ namespace Assets
             public int itemId;/// <summary>
             /// sets item Id and allows expansion with sets of Items
             /// </summary>
-            protected int setId;//can be used to expand difficulty
+            int setId;
 
            public Item(int itemID, int setID)
             {
