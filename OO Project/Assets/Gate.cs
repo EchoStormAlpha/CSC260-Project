@@ -9,7 +9,7 @@ namespace Assets
     public class Gate : Player, IItemUser
     {
         
-        new public int currentItem { get; set; }//item to be deposited
+         public int currentItem { get; set; }//item to be deposited
         
         public Gate()
         {
@@ -21,7 +21,7 @@ namespace Assets
             currentItem = 1;
 
         }
-        new public int changeItem(int item)
+         public int changeItem(int item)
         {
             return item++;
         }

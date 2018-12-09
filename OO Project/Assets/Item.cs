@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Assets
 {
     [System.Serializable]
-    public class Item : MonoBehaviour
+    public class Item 
     {
         
     
@@ -41,4 +41,4 @@ namespace Assets
 
 }
     
-}
+

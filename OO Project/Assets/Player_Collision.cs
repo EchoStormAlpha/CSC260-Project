@@ -8,7 +8,7 @@ namespace Assets
     public class Player_Collision : MonoBehaviour {
         Vector3 originalPos;
         // Use this for initialization
-        int maxnum=1;
+        
         public Player player = new Player();
         public Item item1 = new Item(1);
         public Item item2 = new Item(2);
@@ -26,6 +26,7 @@ namespace Assets
         // Update is called once per frame    ////Class is for handling collisions
         void OnCollisionEnter(Collision collisionInfo)
         {
+            Debug.Log(collisionInfo.collider.name);
             if (collisionInfo.collider.tag == "Obstacle")
             {
                 player.iscollected = false;
@@ -67,6 +68,11 @@ namespace Assets
                     player.isdeposited = true;
                 if (player.isdeposited == true)
                     Debug.Log("winner");
+                if(player.currentItem==gate1.currentItem)
+                {
+                  player.currentItem=player.changeItem(player.currentItem);
+                   gate1.currentItem= gate1.changeItem(player.currentItem);
+                }
             }
     }
         
