@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Assets
 {
-    public class levelSettings
+    public class levelSettings///sets the max number of items
     {
         public int numItems;//max5 per set
                                // protected int numItemSets;//max3

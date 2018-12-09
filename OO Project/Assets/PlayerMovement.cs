@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Assets
 {
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour//Class is focused on allowing movement
     {
 
 
@@ -14,7 +14,7 @@ namespace Assets
        
         void FixedUpdate()
         {
-            if (Input.GetKey("w"))
+            if (Input.GetKey("w"))/////////////////////////////////////Allows 5 types of movement
                 rb.AddForce(0, 0, forwardForce * Time.deltaTime);
             if (Input.GetKey("a"))
                 rb.AddForce(-lateralForce * Time.deltaTime, 0, 0);

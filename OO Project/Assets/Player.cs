@@ -8,7 +8,7 @@ namespace Assets
 {
     public class Player : IItemUser
     {
-        public int currentItem { get; set; }
+        public int currentItem { get; set; }//item to collect
         public bool iscollected;
         public bool isdeposited;
         public Player()

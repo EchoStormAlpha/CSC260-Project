@@ -8,15 +8,18 @@ namespace Assets
 {
     public class Gate : Player, IItemUser
     {
-
+        
         new public int currentItem { get; set; }//item to be deposited
+        
         public Gate()
         {
-            currentItem = 1; 
+           
+            currentItem = 1;
         }
         public Gate(int num)
         {
-            currentItem = num;
+            currentItem = 1;
+
         }
         new public int changeItem(int item)
         {
