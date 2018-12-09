@@ -83,12 +83,16 @@ namespace Assets
                     Debug.Log(player.currentItem);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                    gate1.currentItem= gate1.changeItem(player.currentItem);
 =======
 =======
 >>>>>>> parent of fa35a1b... Minor tweaks and balances, increased encapsulation and abstraction, Added more notes
                 
 >>>>>>> parent of fa35a1b... Minor tweaks and balances, increased encapsulation and abstraction, Added more notes
+=======
+                   gate1.currentItem= gate1.changeItem(player.currentItem);
+>>>>>>> parent of 3f135c7... Map Balancing and bugfixes
                 }
             }
     }
