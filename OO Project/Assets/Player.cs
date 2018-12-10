@@ -6,9 +6,9 @@ using UnityEngine;
 
 namespace Assets
 {   [System.Serializable]
-    public class Player : MonoBehaviour, IItemUser
+    public class Player: IItemUser
     {
-        Rigidbody rb;
+        
         public int currentItem { get; set; }//item to collect
         public bool iscollected;
         public bool isdeposited;
